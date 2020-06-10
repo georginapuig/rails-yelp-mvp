@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # rails g model Restaurant name address phone_number category
+  # rails db:migrate   
+
+  # git status
+  # git add .
+  # git commit -m "Add restaurant model"
+
+  # rails generate controller restaurant
+
+
 end
