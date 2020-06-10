@@ -1,0 +1,3 @@
+[submodule "spec"]
+	path = spec
+	url = git@github.com:lewagon/fullstack-challenges-03-Rails-restaurant-reviews-specs.git
