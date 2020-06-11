@@ -1,0 +1,11 @@
+<div class="container pt-4 col-4">
+  <h1>Create restaurant</h1>
+  <!-- <form action="/restaurants"> -->
+  <%= simple_form_for @restaurant do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category, collection: Restaurant::CATEGORIES %>
+    <%= f.submit class: 'btn btn-success text-white' %>
+  <% end %>
+</div>

@@ -16,13 +16,11 @@ puts 'Creating restaurants...'
 5.times do |number|
   
   Restaurant.create!(
-    name: Faker::Movies::StarWars.planet,
-    address: Faker::Movies::StarWars.call_sign,
-    phone_number: "156564",
-    category: "chinese"
+    name: Faker::TvShows::BojackHorseman.character,
+    address: Faker::Address.street_address,
+    phone_number: Faker::PhoneNumber.cell_phone,
+    category: [ "chinese", "italian", "japanese", "french", "belgian" ].sample
   )
-
-  puts "Created restaurant number: #{number + 1}"
 end
 
 puts 'Finished creating the restaurants!'
