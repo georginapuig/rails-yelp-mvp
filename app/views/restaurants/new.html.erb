@@ -8,4 +8,8 @@
     <%= f.input :category, collection: Restaurant::CATEGORIES %>
     <%= f.submit class: 'btn btn-success text-white' %>
   <% end %>
+
+  <br>
+
+  <%= link_to "Back to restaurants", restaurants_path %>
 </div>
